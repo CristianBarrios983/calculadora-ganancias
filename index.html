@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Ganancias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <form>
+            <input type="text" placeholder="Nombre de producto">
+            <input type="number" placeholder="Precio de compra">
+            <input type="number" placeholder="Cantidad de unidades">
+            <input type="number" placeholder="Precio de venta">
+            <input value="Agregar" class="agregar-btn" id="agregar" onclick="agregar()">
+        </form>
+       
+        <div class="productos">
+            <div class="producto">
+                <label for="">Caja de alfajores <span class="precio-compra">$7000</span> <span>24 uni.</span> <span class="precio">$500</span></label>
+            </div>
+            <div class="producto">
+                <label for="">Caja de chupetines <span class="precio-compra">$3000</span> <span>30 uni.</span> <span class="precio">$200</span></label>
+            </div>
+            <div class="producto">
+                <label for="">Frasco de gelatinas <span class="precio-compra">$9500</span> <span>100 uni.</span> <span class="precio">$200</span></label>
+            </div>
+            <button class="calcular-btn" id="calcular" onclick="calcular()">Calcular</button>
+        </div>
+    </main>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

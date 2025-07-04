@@ -1,0 +1,64 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+body{
+    background-color: palevioletred;
+}
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+form input{
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+.agregar-btn{
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.agregar-btn:hover{
+    background-color: rgb(1, 94, 1);
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    background: white;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.precio-compra{
+    color: red;
+}
+
+.precio{
+    color: green;
+}
+
+.calcular-btn{
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+.calcular-btn:hover{
+    background-color: rgb(106, 33, 174);
+
+}
