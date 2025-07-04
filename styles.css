@@ -1,6 +1,6 @@
 *{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 body{
@@ -16,7 +16,7 @@ form{
     border-radius: 5px 5px 0px 0px;
 }
 
-form input{
+form input, button{
     padding: 6px;
     border-radius: 5px;
     border: none;
@@ -32,12 +32,12 @@ form input{
     background-color: rgb(1, 94, 1);
 }
 
-.productos{
+#productos{
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding: 20px;
-    background: white;
+    background-color: white;
     border-radius: 0px 0px 5px 5px;
 }
 

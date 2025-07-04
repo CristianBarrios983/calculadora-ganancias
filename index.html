@@ -9,24 +9,16 @@
 <body>
 
     <main>
-        <form>
-            <input type="text" placeholder="Nombre de producto">
-            <input type="number" placeholder="Precio de compra">
-            <input type="number" placeholder="Cantidad de unidades">
-            <input type="number" placeholder="Precio de venta">
-            <input value="Agregar" class="agregar-btn" id="agregar" onclick="agregar()">
+        <form id="formulario-productos">
+            <input type="text" placeholder="Nombre de producto" id="nombre-producto">
+            <input type="number" placeholder="Precio de compra" id="precio-compra">
+            <input type="number" placeholder="Cantidad de unidades" id="cantidad-unidades">
+            <input type="number" placeholder="Precio de venta" id="precio-venta">
+            <button class="agregar-btn" id="agregar">Agregar</button>
         </form>
        
-        <div class="productos">
-            <div class="producto">
-                <label for="">Caja de alfajores <span class="precio-compra">$7000</span> <span>24 uni.</span> <span class="precio">$500</span></label>
-            </div>
-            <div class="producto">
-                <label for="">Caja de chupetines <span class="precio-compra">$3000</span> <span>30 uni.</span> <span class="precio">$200</span></label>
-            </div>
-            <div class="producto">
-                <label for="">Frasco de gelatinas <span class="precio-compra">$9500</span> <span>100 uni.</span> <span class="precio">$200</span></label>
-            </div>
+        <div id="productos">
+            
             <button class="calcular-btn" id="calcular" onclick="calcular()">Calcular</button>
         </div>
     </main>
