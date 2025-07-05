@@ -49,6 +49,19 @@ form input, button{
     color: green;
 }
 
+.producto{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.eliminar-producto{
+    background-color: red;
+    color: white;
+    padding: 6px;
+    text-align: center;
+}
+
 .calcular-btn{
     background-color: blueviolet;
     color: white;
