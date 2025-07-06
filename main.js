@@ -6,6 +6,10 @@ let productos = []; //Array para almacenar los productos
 
 calcularBoton.style.display = 'none'; //Oculta el boton de calcular inicialmente
 
+const resumenDiv = document.getElementById('resumen');
+
+resumenDiv.style.display = 'none'; //Oculta el contenedor de resumen inicialmente
+
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -77,6 +81,10 @@ function calcular() {
     let ventaTotal = 0;
     let gananciaTotal = 0;
 
+    resumenDiv.style.display = 'flex'; 
+    formulario.style.display = 'none';
+    productosDiv.style.display = 'none';
+
     let resumenHTML =  `<h2 style="text-align: center;">Resumen de ganancias</h2>`;
 
     productos.forEach((producto) => {
@@ -115,8 +123,21 @@ function calcular() {
                 <p>Ganancia total: $${gananciaTotal.toFixed(2)}</p>
                 <p>Porcentaje de ganancia total: ${porcentajeDeGananciaTotal}%</p>
             </div>
+            <div>
+                <button class="editar-btn" onclick="editar()">Editar</button>
+            </div>
+            <div>
+                <button class="img-btn" onclick="descargarResumen()">Descargar resumen</button>
+            </div>
         `;
 
     document.getElementById('resumen').innerHTML = resumenHTML;
 }
 
+
+function editar() {
+    document.getElementById('resumen').innerHTML = '';
+    resumenDiv.style.display = 'none';
+    formulario.style.display = 'flex';
+    productosDiv.style.display = 'flex';
+}
