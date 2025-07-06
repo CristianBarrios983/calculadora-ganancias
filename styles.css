@@ -75,3 +75,13 @@ form input, button{
     background-color: rgb(106, 33, 174);
 
 }
+
+#resumen{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+}
