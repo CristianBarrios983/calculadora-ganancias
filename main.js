@@ -127,7 +127,7 @@ function calcular() {
                 <button class="editar-btn" onclick="editar()">Editar</button>
             </div>
             <div>
-                <button class="img-btn" onclick="descargarResumen()">Descargar resumen</button>
+                <button class="img-btn" onclick="descargarImagenResumen()">Descargar resumen</button>
             </div>
         `;
 
@@ -140,4 +140,17 @@ function editar() {
     resumenDiv.style.display = 'none';
     formulario.style.display = 'flex';
     productosDiv.style.display = 'flex';
+}
+
+function descargarImagenResumen() {
+    html2canvas(document.getElementById('resumen'), {
+        scale: 2,
+        useCORS: true
+    }).then(canvas => {
+        const img = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = img;
+        link.download = 'resumen.png';
+        link.click();
+    });
 }
